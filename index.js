@@ -2,7 +2,6 @@ import express from 'express';
 import dotenv from 'dotenv';
 import cors from 'cors';
 
-import Problem from './models/problemModel.js';
 import Rule from './models/ruleModel.js';
 import connectDB from './configs/connectDB.js';
 import authRoutes from './routes/authRoutes.js';
@@ -16,12 +15,10 @@ import ruleRoutes from './routes/ruleRoutes.js';
 import processRoutes from './routes/processRoutes.js';
 
 import ruleModel from './models/ruleModel.js';
-import mahasiswaModel from './models/mahasiswaModel.js';
 import userModel from './models/userModel.js';
 import problemModel from './models/problemModel.js';
 import evidenceModel from './models/evidenceModel.js';
 import pertanyaanModel from './models/pertanyaanModel.js';
-import { getMahasiswas } from './controllers/mahasiswaController.js';
 
 dotenv.config();
 
